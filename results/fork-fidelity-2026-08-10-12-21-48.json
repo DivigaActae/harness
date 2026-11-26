@@ -1,0 +1,533 @@
+{
+  "generated_at": "2026-08-10T12:21:48Z",
+  "pipeline_model": "deepseek-chat",
+  "judge_model": "deepseek-chat",
+  "judge_temperature": 0.0,
+  "judge_reps": 1,
+  "threshold": 7.0,
+  "tolerance": 1.5,
+  "dry_run": false,
+  "scenarios": [
+    {
+      "name": "s1-market-entry",
+      "description": "Market-entry analysis for a plant-based milk startup in Germany",
+      "topic": "Launching a plant-based milk startup in Germany in 2026",
+      "step_count": 5,
+      "fork_at_step": 2,
+      "inherited_steps": [
+        "research",
+        "competitors"
+      ],
+      "tail_steps": [
+        "pricing",
+        "risks",
+        "recommendation"
+      ],
+      "prefix_identical": true,
+      "prefix_mismatches": [],
+      "fork_fidelity": {
+        "score": 8.33,
+        "verdict": "minor_differences",
+        "rationale": "Both outputs recommend a GO with the same core strategy (targeting the functional/flavored 14.5% CAGR segment, avoiding plain oat, leveraging the 42% flexitarian premium and Berief's 30-40% premium). Minor differences include specific price points (candidate's €2.49/€3.29 vs reference's 35%/15% premiums) and risk framing (candidate adds a distribution lockout risk, reference adds a clean-label scrutiny risk), but these are acceptable variations in proposed values and coverage. | Both outputs recommend a GO with the same premium regional organic positioning, cite the same market data (2.5% volume vs 7.8% value growth, 42% flexitarian households, €2.30 average, €3.10+ premium), and cover the same key risks and mitigations. Minor differences in pricing details (e.g., margin targets, trade prices) are acceptable invented specifics, not factual contradictions. | The candidate covers the same key facts and conclusions (GO recommendation, €504M non-oat gap, 71% taste/texture barrier, premium pricing strategy, top risks) with equivalent reasoning. Minor differences include specific price points (€2.49/€2.99 vs €2.79/€2.99) and some risk framing (supply chain vs. premium rejection), but these are acceptable variations in proposed values and emphasis, not substantive contradictions.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs recommend a GO with the same core strategy (targeting the functional/flavored 14.5% CAGR segment, avoiding plain oat, leveraging the 42% flexitarian premium and Berief's 30-40% premium). Minor differences include specific price points (candidate's €2.49/€3.29 vs reference's 35%/15% premiums) and risk framing (candidate adds a distribution lockout risk, reference adds a clean-label scrutiny risk), but these are acceptable variations in proposed values and coverage."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "Both outputs recommend a GO with the same premium regional organic positioning, cite the same market data (2.5% volume vs 7.8% value growth, 42% flexitarian households, €2.30 average, €3.10+ premium), and cover the same key risks and mitigations. Minor differences in pricing details (e.g., margin targets, trade prices) are acceptable invented specifics, not factual contradictions."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same key facts and conclusions (GO recommendation, €504M non-oat gap, 71% taste/texture barrier, premium pricing strategy, top risks) with equivalent reasoning. Minor differences include specific price points (€2.49/€2.99 vs €2.79/€2.99) and some risk framing (supply chain vs. premium rejection), but these are acceptable variations in proposed values and emphasis, not substantive contradictions."
+          }
+        ]
+      },
+      "rerun_fidelity": {
+        "score": 5.0,
+        "verdict": "some_substantive_differences",
+        "rationale": "The candidate's pricing strategy (single SKU at €2.99/L, 55-60% margin, regenerative positioning) fundamentally differs from the reference's two-SKU tiered skimming model with specific premiums over Oatly and Alpro. While both recommend a GO and identify similar risks (shelf space, supply chain, clean label), the candidate omits the reference's key quantified market data (14.5% CAGR functional segment, 42% flexitarian premium, Berief precedent) and introduces different risk priorities (greenwashing, price rejection) not in the reference. | The candidate's pricing strategy (dual-tier barbell with €1.49/€2.49) and risk analysis (price war, pea protein) diverge substantially from the reference's premium regionalist approach (€2.49/€3.29, premiumization window), with different target segments, competitive anchors, and key facts, though both recommend GO. | The candidate's pricing strategy targets the oat segment with three SKUs (including oat-based products) at €2.49–€3.29, directly contradicting the reference's core strategy of launching exclusively in non-oat variants to avoid the price war. The candidate also cites a different market size (€2.5B vs €1.2B) and different consumer barriers (price sensitivity vs taste/texture), and its risk list omits the reference's key taste/texture barrier. These are substantive factual and strategic divergences.",
+        "samples": [
+          {
+            "score": 6,
+            "verdict": "substantive_differences",
+            "rationale": "The candidate's pricing strategy (single SKU at €2.99/L, 55-60% margin, regenerative positioning) fundamentally differs from the reference's two-SKU tiered skimming model with specific premiums over Oatly and Alpro. While both recommend a GO and identify similar risks (shelf space, supply chain, clean label), the candidate omits the reference's key quantified market data (14.5% CAGR functional segment, 42% flexitarian premium, Berief precedent) and introduces different risk priorities (greenwashing, price rejection) not in the reference."
+          },
+          {
+            "score": 5,
+            "verdict": "substantive_differences",
+            "rationale": "The candidate's pricing strategy (dual-tier barbell with €1.49/€2.49) and risk analysis (price war, pea protein) diverge substantially from the reference's premium regionalist approach (€2.49/€3.29, premiumization window), with different target segments, competitive anchors, and key facts, though both recommend GO."
+          },
+          {
+            "score": 4,
+            "verdict": "substantive_differences",
+            "rationale": "The candidate's pricing strategy targets the oat segment with three SKUs (including oat-based products) at €2.49–€3.29, directly contradicting the reference's core strategy of launching exclusively in non-oat variants to avoid the price war. The candidate also cites a different market size (€2.5B vs €1.2B) and different consumer barriers (price sensitivity vs taste/texture), and its risk list omits the reference's key taste/texture barrier. These are substantive factual and strategic divergences."
+          }
+        ]
+      },
+      "repeats": [
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 6.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 9.0,
+          "rerun_fidelity": 5.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 4.0,
+          "prefix_identical": true,
+          "retried": false
+        }
+      ],
+      "pass": true,
+      "fail_reason": null,
+      "llm_calls": 39,
+      "tokens": 42863,
+      "channels": [
+        {
+          "baseline": "fid-s1-market-entry-1d4465dc",
+          "rerun": "fid-s1-market-entry-1d4465dc-rerun",
+          "fork": "fid-s1-market-entry-1d4465dc-fork"
+        },
+        {
+          "baseline": "fid-s1-market-entry-a21aefde",
+          "rerun": "fid-s1-market-entry-a21aefde-rerun",
+          "fork": "fid-s1-market-entry-a21aefde-fork"
+        },
+        {
+          "baseline": "fid-s1-market-entry-cdbb96f7",
+          "rerun": "fid-s1-market-entry-cdbb96f7-rerun",
+          "fork": "fid-s1-market-entry-cdbb96f7-fork"
+        }
+      ]
+    },
+    {
+      "name": "s2-code-review",
+      "description": "Security/correctness review of a payment-handling Python snippet",
+      "topic": "Code review of a payment handler",
+      "step_count": 5,
+      "fork_at_step": 3,
+      "inherited_steps": [
+        "understand",
+        "bugs",
+        "security"
+      ],
+      "tail_steps": [
+        "improvements",
+        "verdict"
+      ],
+      "prefix_identical": true,
+      "prefix_mismatches": [],
+      "fork_fidelity": {
+        "score": 8.33,
+        "verdict": "minor_differences",
+        "rationale": "The candidate covers the same key improvements (parameterized queries, transaction management) and the same blocking issues (SQL injection, missing transaction handling), with equivalent reasoning. It adds a race condition and authorization issue, which are valid additional points, and omits the explicit rollback context manager, but these are minor differences that do not change the core conclusions. | Both outputs identify the same two critical blocking issues (SQL injection and missing transaction management) with matching fixes and the same NOT MERGEABLE verdict; the candidate is slightly truncated but covers the same key facts and conclusions. | Both outputs identify the same critical issues (SQL injection, race condition, non-atomic transaction) and propose equivalent fixes (parameterized queries, atomic balance update). The candidate's improvements section is more complete and includes a concrete atomic update example, while the reference's improvements section is truncated; the verdict sections are substantively equivalent.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same key improvements (parameterized queries, transaction management) and the same blocking issues (SQL injection, missing transaction handling), with equivalent reasoning. It adds a race condition and authorization issue, which are valid additional points, and omits the explicit rollback context manager, but these are minor differences that do not change the core conclusions."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "Both outputs identify the same two critical blocking issues (SQL injection and missing transaction management) with matching fixes and the same NOT MERGEABLE verdict; the candidate is slightly truncated but covers the same key facts and conclusions."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs identify the same critical issues (SQL injection, race condition, non-atomic transaction) and propose equivalent fixes (parameterized queries, atomic balance update). The candidate's improvements section is more complete and includes a concrete atomic update example, while the reference's improvements section is truncated; the verdict sections are substantively equivalent."
+          }
+        ]
+      },
+      "rerun_fidelity": {
+        "score": 8.0,
+        "verdict": "minor_differences",
+        "rationale": "Both outputs identify the same critical SQL injection issue and propose parameterized queries, and both conclude NOT MERGEABLE. The candidate adds a race condition and missing authorization as blocking issues, while the reference focuses on transaction management and error handling; these are additional valid concerns rather than contradictions, and the core facts and conclusions align. | Both outputs identify the same critical issues (SQL injection, missing transaction management) and reach the same NOT MERGEABLE verdict with equivalent fixes. The candidate adds an extra issue (input validation) and omits the reference's third blocking issue detail, but these are minor coverage differences without substantive contradiction. | Both outputs identify the same critical issues (SQL injection, race condition, non-atomic transactions) and reach the same NOT MERGEABLE verdict, with equivalent coverage. Minor differences exist in the ordering of issues and the specific improvement examples, but these do not change the substantive conclusions.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs identify the same critical SQL injection issue and propose parameterized queries, and both conclude NOT MERGEABLE. The candidate adds a race condition and missing authorization as blocking issues, while the reference focuses on transaction management and error handling; these are additional valid concerns rather than contradictions, and the core facts and conclusions align."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs identify the same critical issues (SQL injection, missing transaction management) and reach the same NOT MERGEABLE verdict with equivalent fixes. The candidate adds an extra issue (input validation) and omits the reference's third blocking issue detail, but these are minor coverage differences without substantive contradiction."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs identify the same critical issues (SQL injection, race condition, non-atomic transactions) and reach the same NOT MERGEABLE verdict, with equivalent coverage. Minor differences exist in the ordering of issues and the specific improvement examples, but these do not change the substantive conclusions."
+          }
+        ]
+      },
+      "repeats": [
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 9.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        }
+      ],
+      "pass": true,
+      "fail_reason": null,
+      "llm_calls": 36,
+      "tokens": 28823,
+      "channels": [
+        {
+          "baseline": "fid-s2-code-review-eeeb53c1",
+          "rerun": "fid-s2-code-review-eeeb53c1-rerun",
+          "fork": "fid-s2-code-review-eeeb53c1-fork"
+        },
+        {
+          "baseline": "fid-s2-code-review-7b48ca30",
+          "rerun": "fid-s2-code-review-7b48ca30-rerun",
+          "fork": "fid-s2-code-review-7b48ca30-fork"
+        },
+        {
+          "baseline": "fid-s2-code-review-e93f19b3",
+          "rerun": "fid-s2-code-review-e93f19b3-rerun",
+          "fork": "fid-s2-code-review-e93f19b3-fork"
+        }
+      ]
+    },
+    {
+      "name": "s3-localization",
+      "description": "Translate an English technical paragraph to French and adapt it for a general audience",
+      "topic": "Localization of an LLM technical explainer",
+      "step_count": 3,
+      "fork_at_step": 1,
+      "inherited_steps": [
+        "translate"
+      ],
+      "tail_steps": [
+        "adapt",
+        "glossary"
+      ],
+      "prefix_identical": true,
+      "prefix_mismatches": [],
+      "fork_fidelity": {
+        "score": 9.67,
+        "verdict": "equivalent",
+        "rationale": "The candidate conveys the same facts and conclusions as the reference, covering all key points (sequential token generation, probability-based selection, temperature adjustment, KV caching, and latency scaling) with equivalent glossary definitions. | The candidate covers all key facts and conclusions of the reference (token-by-token generation, probability-based selection, temperature, KV caching, and linear latency scaling) with only minor wording and glossary additions that do not alter meaning. | The candidate conveys the same facts and conclusions as the reference, covering all key points (autoregressive generation, temperature, caching, latency scaling) with only minor stylistic differences.",
+        "samples": [
+          {
+            "score": 10,
+            "verdict": "equivalent",
+            "rationale": "The candidate conveys the same facts and conclusions as the reference, covering all key points (sequential token generation, probability-based selection, temperature adjustment, KV caching, and latency scaling) with equivalent glossary definitions."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "The candidate covers all key facts and conclusions of the reference (token-by-token generation, probability-based selection, temperature, KV caching, and linear latency scaling) with only minor wording and glossary additions that do not alter meaning."
+          },
+          {
+            "score": 10,
+            "verdict": "equivalent",
+            "rationale": "The candidate conveys the same facts and conclusions as the reference, covering all key points (autoregressive generation, temperature, caching, latency scaling) with only minor stylistic differences."
+          }
+        ]
+      },
+      "rerun_fidelity": {
+        "score": 9.67,
+        "verdict": "equivalent",
+        "rationale": "Both outputs convey the same key facts and conclusions about autoregressive generation, temperature, KV caching, and latency, with only minor phrasing differences. | The candidate covers the same key facts and conclusions as the reference, with only minor wording and ordering differences in the glossary; no substantive facts are missing or contradicted. | The candidate conveys the same facts and conclusions as the reference, covering all key points (autoregressive generation, probability-based selection, temperature, KV caching, and latency scaling) with only minor stylistic differences.",
+        "samples": [
+          {
+            "score": 10,
+            "verdict": "equivalent",
+            "rationale": "Both outputs convey the same key facts and conclusions about autoregressive generation, temperature, KV caching, and latency, with only minor phrasing differences."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "The candidate covers the same key facts and conclusions as the reference, with only minor wording and ordering differences in the glossary; no substantive facts are missing or contradicted."
+          },
+          {
+            "score": 10,
+            "verdict": "equivalent",
+            "rationale": "The candidate conveys the same facts and conclusions as the reference, covering all key points (autoregressive generation, probability-based selection, temperature, KV caching, and latency scaling) with only minor stylistic differences."
+          }
+        ]
+      },
+      "repeats": [
+        {
+          "fork_fidelity": 10.0,
+          "rerun_fidelity": 10.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 9.0,
+          "rerun_fidelity": 9.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 10.0,
+          "rerun_fidelity": 10.0,
+          "prefix_identical": true,
+          "retried": false
+        }
+      ],
+      "pass": true,
+      "fail_reason": null,
+      "llm_calls": 24,
+      "tokens": 7761,
+      "channels": [
+        {
+          "baseline": "fid-s3-localization-fb579ba6",
+          "rerun": "fid-s3-localization-fb579ba6-rerun",
+          "fork": "fid-s3-localization-fb579ba6-fork"
+        },
+        {
+          "baseline": "fid-s3-localization-c30b172d",
+          "rerun": "fid-s3-localization-c30b172d-rerun",
+          "fork": "fid-s3-localization-c30b172d-fork"
+        },
+        {
+          "baseline": "fid-s3-localization-44ef16dd",
+          "rerun": "fid-s3-localization-44ef16dd-rerun",
+          "fork": "fid-s3-localization-44ef16dd-fork"
+        }
+      ]
+    },
+    {
+      "name": "s4-incident-analysis",
+      "description": "Postmortem of a fictional payments-API outage",
+      "topic": "Outage postmortem analysis",
+      "step_count": 4,
+      "fork_at_step": 1,
+      "inherited_steps": [
+        "timeline"
+      ],
+      "tail_steps": [
+        "rootcause",
+        "blastradius",
+        "actions"
+      ],
+      "prefix_identical": true,
+      "prefix_mismatches": [],
+      "fork_fidelity": {
+        "score": 8.33,
+        "verdict": "minor_differences",
+        "rationale": "The candidate covers the same root cause, blast radius, and action items with matching facts and conclusions. Minor differences include a different estimated total failed requests (~200K vs ~60K) and a different set of P0 actions, but these are acceptable variations in proposed values and coverage. | Both outputs identify the same root cause (batch job crash exhausting DB connections), provide matching monitoring gaps, and propose equivalent action items with only minor differences in estimated user counts and phrasing. | The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent facts and conclusions. Minor differences include slightly different emphasis on monitoring layers and some action item details (e.g., alert thresholds, timelines), but no substantive contradictions or missing key points.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same root cause, blast radius, and action items with matching facts and conclusions. Minor differences include a different estimated total failed requests (~200K vs ~60K) and a different set of P0 actions, but these are acceptable variations in proposed values and coverage."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "Both outputs identify the same root cause (batch job crash exhausting DB connections), provide matching monitoring gaps, and propose equivalent action items with only minor differences in estimated user counts and phrasing."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent facts and conclusions. Minor differences include slightly different emphasis on monitoring layers and some action item details (e.g., alert thresholds, timelines), but no substantive contradictions or missing key points."
+          }
+        ]
+      },
+      "rerun_fidelity": {
+        "score": 8.33,
+        "verdict": "minor_differences",
+        "rationale": "The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent facts and conclusions. Minor differences exist in the ordering and emphasis of monitoring gaps (e.g., candidate includes latency masking and queue depth, while reference includes the 6-minute gap and deployment masking), but no substantive facts are missing or contradicted. | The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent reasoning and coverage. Minor differences include a different estimated user count and a slightly different emphasis in the actions, but these do not change the substantive conclusions. | The candidate covers the same root cause, monitoring gaps, blast radius, and action items with matching facts and conclusions; only minor wording and formatting differences exist.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent facts and conclusions. Minor differences exist in the ordering and emphasis of monitoring gaps (e.g., candidate includes latency masking and queue depth, while reference includes the 6-minute gap and deployment masking), but no substantive facts are missing or contradicted."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same root cause, monitoring gaps, blast radius, and action items with equivalent reasoning and coverage. Minor differences include a different estimated user count and a slightly different emphasis in the actions, but these do not change the substantive conclusions."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "The candidate covers the same root cause, monitoring gaps, blast radius, and action items with matching facts and conclusions; only minor wording and formatting differences exist."
+          }
+        ]
+      },
+      "repeats": [
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 9.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 9.0,
+          "prefix_identical": true,
+          "retried": false
+        }
+      ],
+      "pass": true,
+      "fail_reason": null,
+      "llm_calls": 33,
+      "tokens": 31001,
+      "channels": [
+        {
+          "baseline": "fid-s4-incident-analysis-22f53d4c",
+          "rerun": "fid-s4-incident-analysis-22f53d4c-rerun",
+          "fork": "fid-s4-incident-analysis-22f53d4c-fork"
+        },
+        {
+          "baseline": "fid-s4-incident-analysis-a8519468",
+          "rerun": "fid-s4-incident-analysis-a8519468-rerun",
+          "fork": "fid-s4-incident-analysis-a8519468-fork"
+        },
+        {
+          "baseline": "fid-s4-incident-analysis-379aca7c",
+          "rerun": "fid-s4-incident-analysis-379aca7c-rerun",
+          "fork": "fid-s4-incident-analysis-379aca7c-fork"
+        }
+      ]
+    },
+    {
+      "name": "s5-product-brief",
+      "description": "Product brief for adding offline mode to a note-taking app",
+      "topic": "Adding an offline mode to a cross-platform note-taking app",
+      "step_count": 4,
+      "fork_at_step": 3,
+      "inherited_steps": [
+        "userresearch",
+        "spec",
+        "gtm"
+      ],
+      "tail_steps": [
+        "metrics"
+      ],
+      "prefix_identical": true,
+      "prefix_mismatches": [],
+      "fork_fidelity": {
+        "score": 8.33,
+        "verdict": "minor_differences",
+        "rationale": "Both outputs propose five success metrics with baselines and targets, covering similar key aspects (sync success rate, latency). The candidate's first metric combines capture and sync success, while the reference separates them; the candidate's second metric uses median latency with a 30-second target, whereas the reference uses P95 with a 1.5-second target. These are different but not contradictory, and the overall coverage and reasoning align. | The candidate covers the same two key metrics with equivalent definitions and reasoning, but the target for the first metric differs (95% vs 98%) and the candidate's output is truncated, missing the remaining three metrics. | Both outputs define the same two key metrics with matching baselines (0%) and targets (95% and 99.9%), and the reasoning aligns. The candidate omits the remaining three metrics, but the reference also only lists two, so coverage is equivalent.",
+        "samples": [
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "Both outputs propose five success metrics with baselines and targets, covering similar key aspects (sync success rate, latency). The candidate's first metric combines capture and sync success, while the reference separates them; the candidate's second metric uses median latency with a 30-second target, whereas the reference uses P95 with a 1.5-second target. These are different but not contradictory, and the overall coverage and reasoning align."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same two key metrics with equivalent definitions and reasoning, but the target for the first metric differs (95% vs 98%) and the candidate's output is truncated, missing the remaining three metrics."
+          },
+          {
+            "score": 9,
+            "verdict": "equivalent",
+            "rationale": "Both outputs define the same two key metrics with matching baselines (0%) and targets (95% and 99.9%), and the reasoning aligns. The candidate omits the remaining three metrics, but the reference also only lists two, so coverage is equivalent."
+          }
+        ]
+      },
+      "rerun_fidelity": {
+        "score": 7.33,
+        "verdict": "minor_differences",
+        "rationale": "The candidate covers the same core reliability metric (offline sync success rate) with a matching target (99.5%), but differs in baseline definition (N/A vs 0%) and omits the latency metric, replacing it with an adoption metric. These are minor coverage differences without substantive factual contradictions. | The candidate covers the same core metric (offline session success rate) with equivalent reasoning, but differs in baseline (62% vs 0%) and target (95% vs 98%), and introduces a sub-metric not in the reference. The reference's second metric (silent sync completion) is only partially covered by the candidate's sync conflict rate, which is a different focus. | The candidate covers the same first metric with identical baseline and target, but the output is truncated after metric 2, missing the remaining three metrics and their baselines/targets, which is a coverage gap but not a factual contradiction.",
+        "samples": [
+          {
+            "score": 7,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same core reliability metric (offline sync success rate) with a matching target (99.5%), but differs in baseline definition (N/A vs 0%) and omits the latency metric, replacing it with an adoption metric. These are minor coverage differences without substantive factual contradictions."
+          },
+          {
+            "score": 7,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same core metric (offline session success rate) with equivalent reasoning, but differs in baseline (62% vs 0%) and target (95% vs 98%), and introduces a sub-metric not in the reference. The reference's second metric (silent sync completion) is only partially covered by the candidate's sync conflict rate, which is a different focus."
+          },
+          {
+            "score": 8,
+            "verdict": "minor_differences",
+            "rationale": "The candidate covers the same first metric with identical baseline and target, but the output is truncated after metric 2, missing the remaining three metrics and their baselines/targets, which is a coverage gap but not a factual contradiction."
+          }
+        ]
+      },
+      "repeats": [
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 7.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 8.0,
+          "rerun_fidelity": 7.0,
+          "prefix_identical": true,
+          "retried": false
+        },
+        {
+          "fork_fidelity": 9.0,
+          "rerun_fidelity": 8.0,
+          "prefix_identical": true,
+          "retried": false
+        }
+      ],
+      "pass": true,
+      "fail_reason": null,
+      "llm_calls": 27,
+      "tokens": 25818,
+      "channels": [
+        {
+          "baseline": "fid-s5-product-brief-5500a99a",
+          "rerun": "fid-s5-product-brief-5500a99a-rerun",
+          "fork": "fid-s5-product-brief-5500a99a-fork"
+        },
+        {
+          "baseline": "fid-s5-product-brief-35aa21d5",
+          "rerun": "fid-s5-product-brief-35aa21d5-rerun",
+          "fork": "fid-s5-product-brief-35aa21d5-fork"
+        },
+        {
+          "baseline": "fid-s5-product-brief-3912c0de",
+          "rerun": "fid-s5-product-brief-3912c0de-rerun",
+          "fork": "fid-s5-product-brief-3912c0de-fork"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "pass": true,
+    "passed": 5,
+    "scenarios": 5,
+    "mean_fork_fidelity": 8.6,
+    "mean_rerun_fidelity": 7.67,
+    "worst_fork_fidelity": 8.33,
+    "total_llm_calls": 159,
+    "total_tokens": 136266
+  }
+}
